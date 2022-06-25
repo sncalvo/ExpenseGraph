@@ -8,12 +8,15 @@ interface Props {
   disabled?: boolean;
 }
 
-const Button: React.FC<Props> = ({
+type ButtonProps = Props & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+const Button: React.FC<ButtonProps> = ({
   onClick,
   children,
   variant = 'primary',
   outline = false,
   disabled = false,
+  ...props
 }) => (
   <button
     onClick={onClick}
@@ -30,6 +33,7 @@ const Button: React.FC<Props> = ({
       'cursor-pointer': !disabled,
     })}
     disabled={disabled}
+    {...props}
   >
     {children}
   </button>
