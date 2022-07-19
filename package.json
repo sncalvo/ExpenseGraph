@@ -17,6 +17,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.33.0",
     "react-icons": "^4.4.0",
+    "tesseract.js": "^2.1.5",
     "yup": "^0.32.11"
   },
   "devDependencies": {
@@ -32,6 +33,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
+    "@types/tesseract.js": "^2.0.0",
     "babel-loader": "^8.2.5",
     "clsx": "^1.1.1",
     "eslint": "8.18.0",

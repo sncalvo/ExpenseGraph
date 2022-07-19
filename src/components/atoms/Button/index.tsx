@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 interface Props {
-  onClick: () => void;
+  onClick?: () => void;
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'tertiary' | 'danger';
   outline?: boolean;
